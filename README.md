@@ -4,7 +4,7 @@
 raw YUV videos. As the name implies, it is written in `python` and for what it
 is, it is just slow as hell. Seriously. This code is just a proof of concept and
 *shall not been used* to compute SSIM between two videos. Its main purpose is
-only to be read by people interesting to see how SSIM can be computed between
+only to be read by people interested to see how SSIM can be computed between
 two video as `python` is pretty straightforward to read.
 
 If you need to compute SSIM between two raw YUV videos, I suggest you have a
