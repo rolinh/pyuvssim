@@ -2,6 +2,7 @@ def clamp(x, mini=0, maxi=255):
     """Clamp the given value regarding mini/maxi."""
     return int(max(mini, min(x, maxi)))
 
+
 def yuv2rgb(y, u, v):
     """Turn y, u and v components into r, g, b values."""
 
@@ -14,6 +15,7 @@ def yuv2rgb(y, u, v):
     b = clamp((298 * c + 516 * d + 128) >> 8)
 
     return r, g, b
+
 
 def bytes2human(n, format="%(value)i%(symbol)s"):
     """

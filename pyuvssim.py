@@ -11,6 +11,7 @@ try:
 except ImportError:
     from PIL import Image
 
+
 def main():
     parser = argparse.ArgumentParser(prog="pyuvssim",
                                      description="Compares two YUV I420/IYUV raw video files using the SSIM metric")
@@ -81,7 +82,6 @@ def main():
 
                 pix1[x, y] = utils.yuv2rgb(y1, u1, v1)
                 pix2[x, y] = utils.yuv2rgb(y2, u2, v2)
-        # im1.show()
         print("{}, {}".format(n, ssim.compute_ssim(im1, im2)))
 
     f1.close()
@@ -89,4 +89,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
